@@ -30,7 +30,7 @@ sole author
 
 ## License
 
-MIT  
+The Unlicense  
 
 
 ## Badge

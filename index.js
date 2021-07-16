@@ -48,9 +48,10 @@ inquirer
     },
 
     {
-        type: 'input',
+        type: 'list',
         message: 'License: What license protects this project?',
         name: 'license',
+        choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense'],
     },
 
     {
@@ -117,13 +118,13 @@ ${response.license}
 
 ## Tests
 
-${response.badgeName}
+${response.tests}
 
 ---
 
 ###### this good readme was created by readme-generator :)`;
 
-// Create the README.md file in ./output/
+// Create the README.md file in ./output/ or show error if unsuccessful
     fs.writeFile("./output/README.md", readmeMd, (err) =>
         err ? console.error(err) : console.log('Success!  Your new, good README.md is in ./output')
     );
