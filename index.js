@@ -105,8 +105,8 @@ inquirer
         console.log(response);
 
         // Contents of README.md file
-        const readmeMd = 
-`# ${response.title}
+        const readmeMd =
+            `# ${response.title}
 
 ## ${response.description}
 
@@ -161,12 +161,3 @@ ${response.tests}
             err ? console.error(err) : console.log('Success!  Your new, good README.md is in ./output :)')
         );
     });
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
