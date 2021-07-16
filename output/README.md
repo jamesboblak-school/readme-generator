@@ -3,7 +3,8 @@
 
 ## Generate good README.md files automatically with this simple node.js app!
 
-[link to Good-Readme-Generator](https://github.com/jamesboblak/readme-generator)
+[Open](https://github.com/jamesboblak/readme-generator) Good-Readme-Generator:
+https://github.com/jamesboblak/readme-generator
 
 ## Table of Contents
 
@@ -32,7 +33,7 @@ sole author
 
 ## License
 
-The Unlicense  
+[The Unlicense](https://choosealicense.com/licenses/unlicense/)
 
 
 ## Badge
@@ -42,7 +43,7 @@ The Unlicense
 
 ## Tests
 
-no tests developed yet
+tests for this app are a welcome development
 
 ---
 

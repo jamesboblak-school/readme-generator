@@ -69,6 +69,14 @@ inquirer
             choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense'],
         },
 
+        // ## License: URL
+        {
+            type: 'list',
+            message: 'License link: What is the URL to your license?',
+            name: 'licenseUrl',
+            choices: ['https://choosealicense.com/licenses/mit/', 'https://choosealicense.com/licenses/gpl-3.0/', 'https://choosealicense.com/licenses/agpl-3.0/', 'https://choosealicense.com/licenses/lgpl-3.0/', 'https://choosealicense.com/licenses/mpl-2.0/', 'https://choosealicense.com/licenses/apache-2.0/', 'https://choosealicense.com/licenses/bsl-1.0/', 'https://choosealicense.com/licenses/unlicense/']
+        },
+
         // ## Badge: name
         {
             type: 'input',
@@ -97,12 +105,13 @@ inquirer
         console.log(response);
 
         // Contents of README.md file
-        var readmeMd = `
-# ${response.title}
+        const readmeMd = 
+`# ${response.title}
 
 ## ${response.description}
 
-[link to ${response.title}](${response.appUrl})
+[Open](${response.appUrl}) ${response.title}:
+${response.appUrl}
 
 ## Table of Contents
 
@@ -131,7 +140,7 @@ ${response.credits}
 
 ## License
 
-${response.license}  
+[${response.license}](${response.licenseUrl})
 
 
 ## Badge
