@@ -4,82 +4,105 @@ const inquirer = require('inquirer');
 
 // Array of questions for user input
 inquirer
-    .prompt([{
+    .prompt([
+        // # Title
+        {
             type: 'input',
             message: 'Title: What is the title of your project?',
             name: 'title',
         },
 
-    {
-        type: 'input',
-        message: 'Description: What is the description of your project?',
-        name: 'description',
-    },
+        // ## Description
+        {
+            type: 'input',
+            message: 'Description: What is the description of your project?',
+            name: 'description',
+        },
 
-    {
-        type: 'input',
-        message: 'Installation: What are the steps required to install your project?',
-        name: 'installation',
-    },
+        // URL to app
+        {
+            type: 'input',
+            message: 'Description: What is the URL to your app?',
+            name: 'appUrl',
+        },
 
-    {
-        type: 'input',
-        message: 'Usage: Provide instructions and examples for use. ',
-        name: 'usage',
-    },
+        // ## Installation
+        {
+            type: 'input',
+            message: 'Installation: What are the steps required to install your project?',
+            name: 'installation',
+        },
 
-    {
-        type: 'input',
-        message: 'Usage: To add a demo gif, create an `assets/images` folder in your repository and upload your demo .gif to it.  What is the name of your image file (example: app-name_demo.gif)?',
-        name: 'demoGif',
-    },
+        // ## Usage: instructions
+        {
+            type: 'input',
+            message: 'Usage: Provide instructions and examples for use. ',
+            name: 'usage',
+        },
 
-    {
-        type: 'input',
-        message: 'Usage: What alt text would you like on your demoGif?',
-        name: 'altText',
-    },
+        // ## Usage: demo .gif
+        {
+            type: 'input',
+            message: 'Usage: To add a demo gif, create an `assets/images` folder in your repository and upload your demo .gif to it.  What is the name of your image file (example: app-name_demo.gif)?',
+            name: 'demoGif',
+        },
 
+        // ## Usage: demo.gif: alt text
+        {
+            type: 'input',
+            message: 'Usage: What alt text would you like on your demoGif?',
+            name: 'altText',
+        },
 
-    {
-        type: 'input',
-        message: 'Credits: list any collaborators or tutorials used to make this project.',
-        name: 'credits',
-    },
+        // ## Credits
+        {
+            type: 'input',
+            message: 'Credits: list any collaborators or tutorials used to make this project.',
+            name: 'credits',
+        },
 
-    {
-        type: 'list',
-        message: 'License: What license protects this project?',
-        name: 'license',
-        choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense'],
-    },
+        // ## License
+        {
+            type: 'list',
+            message: 'License: What license protects this project?',
+            name: 'license',
+            choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense'],
+        },
 
-    {
-        type: 'input',
-        message: 'Badge name: What shields.io badge does this project wear?',
-        name: 'badgeName',
-    },
+        // ## Badge: name
+        {
+            type: 'input',
+            message: 'Badge name: What shields.io badge does this project wear?',
+            name: 'badgeName',
+        },
 
-    {
-        type: 'input',
-        message: 'Badge link: What is the URL to your badge?',
-        name: 'badgeLink',
-    },
+        // ## Badge: URL
+        {
+            type: 'input',
+            message: 'Badge link: What is the URL to your badge?',
+            name: 'badgeLink',
+        },
 
-    {
-        type: 'input',
-        message: 'Tests: Describe tests here',
-        name: 'tests',
-    },
+        // ## Tests
+        {
+            type: 'input',
+            message: 'Tests: Describe tests here',
+            name: 'tests',
+        },
 
-])
+    ])
 
-.then((response) => {
-    console.log(response);
-    var readmeMd = `
+    // Print user input to the console
+    .then((response) => {
+        console.log(response);
+
+        // Contents of README.md file
+        var readmeMd = `
 # ${response.title}
 
 ## ${response.description}
+
+[link to ${response.title}](${response.appUrl})
 
 ## Table of Contents
 
@@ -124,11 +147,11 @@ ${response.tests}
 
 <sup><sub> This good readme was created by [readme-generator](https://github.com/jamesboblak/readme-generator) :)</sub></sup>`;
 
-// Create the README.md file in ./output/ or show error if unsuccessful
-    fs.writeFile("./output/README.md", readmeMd, (err) =>
-        err ? console.error(err) : console.log('Success!  Your new, good README.md is in ./output :)')
-    );
-});
+        // Create the README.md file in ./output/ or show error if unsuccessful
+        fs.writeFile("./output/README.md", readmeMd, (err) =>
+            err ? console.error(err) : console.log('Success!  Your new, good README.md is in ./output :)')
+        );
+    });
 
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
