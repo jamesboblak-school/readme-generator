@@ -122,11 +122,11 @@ ${response.tests}
 
 ---
 
-###### this good readme was created by readme-generator :)`;
+<sup><sub> This good readme was created by [readme-generator](https://github.com/jamesboblak/readme-generator) :)</sub></sup>`;
 
 // Create the README.md file in ./output/ or show error if unsuccessful
     fs.writeFile("./output/README.md", readmeMd, (err) =>
-        err ? console.error(err) : console.log('Success!  Your new, good README.md is in ./output')
+        err ? console.error(err) : console.log('Success!  Your new, good README.md is in ./output :)')
     );
 });
 

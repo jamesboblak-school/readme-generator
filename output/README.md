@@ -40,8 +40,8 @@ The Unlicense
 
 ## Tests
 
-Watchers
+no tests developed yet
 
 ---
 
-###### this good readme was created by readme-generator :)
+<sup><sub> This good readme was created by [readme-generator](https://github.com/jamesboblak/readme-generator) :)</sub></sup>
