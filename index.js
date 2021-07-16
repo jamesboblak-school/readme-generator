@@ -43,7 +43,7 @@ inquirer
         // ## Usage: demo .gif
         {
             type: 'input',
-            message: 'Usage: To add a demo gif, create an `assets/images` folder in your repository and upload your demo .gif to it.  What is the name of your image file (example: app-name_demo.gif)?',
+            message: 'Usage: To add a demo gif, create an `assets/images` folder in your repository and upload your demo .gif to it.  What is the name of your image file (app-name_demo.gif)?',
             name: 'demoGif',
         },
 

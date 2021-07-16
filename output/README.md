@@ -1,9 +1,8 @@
-
-# Good-Readme-Generator
+# Readme-Generator
 
 ## Generate good README.md files automatically with this simple node.js app!
 
-[Open](https://github.com/jamesboblak/readme-generator) Good-Readme-Generator:
+[Open](https://github.com/jamesboblak/readme-generator) Readme-Generator:
 https://github.com/jamesboblak/readme-generator
 
 ## Table of Contents

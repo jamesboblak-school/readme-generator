@@ -1,9 +1,9 @@
-
-# Good-Readme-Generator
+# Readme-Generator
 
 ## Generate good README.md files automatically with this simple node.js app!
 
-[link to Good-Readme-Generator](https://github.com/jamesboblak/readme-generator)
+[Open](https://github.com/jamesboblak/readme-generator) Readme-Generator:
+https://github.com/jamesboblak/readme-generator
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ Download the repo, and run the app from terminal: node index.js.
 
 See the example video:  
 
-![good-readme-generator demo gif](./assets/images/app-name_demo.gif)
+![good-readme-generator demo gif](./assets/images/readme-generator_demo.gif)
 
 
 ## Credits
@@ -32,7 +32,7 @@ sole author
 
 ## License
 
-The Unlicense  
+[The Unlicense](https://choosealicense.com/licenses/unlicense/)
 
 
 ## Badge
@@ -42,7 +42,7 @@ The Unlicense
 
 ## Tests
 
-no tests developed yet
+tests for this app are a welcome development
 
 ---
 
