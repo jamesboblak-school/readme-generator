@@ -1,22 +1,32 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-// TODO: Create an array of questions for user input
+
+// Array of questions for user input
 inquirer
-  .prompt([
-    {
-      type: 'input',
-      message: 'What is the name of your project',
-      name: 'name',
-    },
+    .prompt([{
+            type: 'input',
+            message: 'What is the name of your project',
+            name: 'name',
+        },
+// more questions here
 
-  ])
+])
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+.then((response) => {
+    console.log(response);
+    var readmeMd = `# ${response.name}
+          this good readme was created by readme-generator :)`;
+    fs.writeFile("./output/README.md", readmeMd, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+});
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
 
-// Function call to initialize app
-init();
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();
