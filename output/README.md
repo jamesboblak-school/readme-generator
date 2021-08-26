@@ -1,9 +1,9 @@
-# Note Taker
+# React Portfolio
 
-## Keep a short list of persistent notes in your broswer!
+## Here I've developed a React.js depolyment of my Full Stack Developer portfolio.
 
-[Open](https://jamesboblak.github.io/note-taker/) Note Taker:
-https://jamesboblak.github.io/note-taker/
+[Open](https://jamesboblak.github.io/) React Portfolio:
+https://jamesboblak.github.io/
 
 ## Table of Contents
 
@@ -15,19 +15,19 @@ https://jamesboblak.github.io/note-taker/
 
 ## Installation
 
-First, <code>npm install</code> in your Terminal, then <code>node server.js, and load the console-reported site into any browser.  
+This app was constructed in React.js, but was then built for any modern browser.  
 
 
 ## Usage 
 
-To use this app, click on the Notes button, then add a new Title and Text to your new note, and click the Save diskette icon.  This is a good place to keep a to-do list that is frequently updated.  
+Please have a look through my app, and the code I created to bring them to life.  
 
-![Note Taker app demo gif](./assets/images/note-taker_demo.gif)
+![James Boblak Portfolio gif](./assets/images/react-portfolio_demo.gif)
 
 
 ## Credits
 
-sole author  
+James Boblak, YouTube.com, freecodecamp.com, w3schools.com, https://chrome.google.com/webstore/detail/react-developer-tools UC Berkeley Extension Full Stack Developer Bootcamp  
 
 
 ## License
@@ -37,7 +37,7 @@ sole author
 
 ## Badge
 
-![Watchers](https://img.shields.io/github/watchers/jamesboblak/note-taker?style=social)
+![Watchers](https://img.shields.io/github/watchers/jamesboblak/jamesboblak.github.io?style=social)
 
 
 ## Tests
